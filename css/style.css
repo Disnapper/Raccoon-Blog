@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.logo-image{
+ margin-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+
+}
+.navibar{
+    background-color: #6b9ad0;
+    height: 54px;
+    width: 100%;
+}
+.navibar-mobile-question{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ca7d9;
+    height: 100%;
+    width: 5%;
+}
+
+.navibar-mobile-response{
+    cursor: pointer;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ca7d9;
+    height: 100%;
+    width: 5%;
+}
+
+.navibar-content{
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #eee;
+}
+.navibar-content p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+
+
+.navibar-shadow{
+    height: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #c6defa;
+    justify-content: center;
+}
+.tablet-markers{
+    display: none;
+    padding-top: 31px;
+    align-content: center;
+    padding-left: 4%;
+    padding-right: 4%;
+   padding-bottom: 31px;
+    flex-direction: row;
+    width: 92%;
+    height: min-content;
+}
+.ROW1{
+     text-align: center;
+}
+.ROW2{
+    padding-left: 6%;
+    padding-right: 6%;
+     text-align: center;
+}
+.content{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 54%;
+    padding-left: 23%;
+    padding-right: 23%;
+    height: 1000px;
+}
+.main-block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   
+    width: 68%;
+
+}
+.main-block-image img{
+    max-width: 100%;
+}
+
+.main-block-title{
+height: 39px;
+display: flex;
+flex-direction: row;
+font-size: 20px;
+ align-items: center;
+ color: #69747c;
+ font-family: 'Arial Narrow';
+}
+.main-block-signatures{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 38px;
+
+}
+.main-block-signatures p{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    color: #69747c;
+    padding-left: 12px;
+}
+.clock-icon{
+    margin-left: 5px;
+}
+.foot-icon{
+    margin-left: 24px;
+}
+.main-block-text{
+    height: 137px;
+    margin-top: 16px;
+}
+.main-block-text p{
+    font-family: Arial;
+    font-size: 12px;
+     color: #69747c;
+}
+.main-block-loading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     align-items: center;
+}
+.info-block{
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+}
+.section-about p,.section-someinfo p {
+padding-top: 19px;
+font-family: Arial;
+font-size: 12px;
+color: #69747c;
+}
+.section-about img, .section-someinfo img{
+    max-width: 100%;
+}
+.section-someinfo{
+    padding-top: 36px;
+}
+.info-block-markers{
+    padding-top: 38px;
+}
+.info-block-markers img{
+    cursor: pointer;
+    margin-top: 3px;
+     margin-top: 3px;
+}
+@media screen and (max-width: 992px){
+    .header-content{
+    padding-left: 20px;
+     padding-right: 20px;
+    }
+    .info-block{
+        display: none;
+    }
+    .tablet-markers{
+        display: block;
+    }
+    .content{
+    padding-top: 0px;
+    justify-content: center;
+    width: 88%;
+    padding-left: 6%;
+    padding-right: 6%;
+    }
+    .main-block{
+        width:100%;
+        align-items: center;
+    }
+    .main-block-title, .main-block-signatures{
+        width:100%;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 440px){
+    .header{
+        width: 100%;
+    }
+    
+.header-content img{
+    max-width: 100%;
+}
+.navibar-content{
+    display: none;
+}
+.tablet-markers{
+    display: none;
+}
+.content{
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+}
+.main-block-title{
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 68%;
+    padding-left: 16%;
+     padding-right: 16%;
+    background-color: #f4f5f6;
+    display: flex;
+    justify-content: center;
+}
+.main-block-signatures{
+    text-align: center;
+    justify-content: center;
+}
+}
