@@ -19,6 +19,9 @@
     height: 54px;
     width: 100%;
 }
+.mobile-icons{
+    display: none;
+}
 .navibar-mobile-question{
     cursor: pointer;
     display: flex;
@@ -181,6 +184,9 @@ color: #69747c;
     margin-top: 3px;
      margin-top: 3px;
 }
+.social-sprites-tablet{
+    display: none;
+}
 @media screen and (max-width: 992px){
     .header-content{
     padding-left: 20px;
@@ -192,12 +198,22 @@ color: #69747c;
     .tablet-markers{
         display: block;
     }
+    .social-sprites-tablet{
+    max-width: 100%;
+    position: absolute;
+    text-align: right;
+    display: block;
+    flex-direction: column;
+    width: 60px;
+    height: 150px;
+    right: 0;
+}
     .content{
     padding-top: 0px;
     justify-content: center;
-    width: 88%;
-    padding-left: 6%;
-    padding-right: 6%;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
     }
     .main-block{
         width:100%;
@@ -222,6 +238,7 @@ color: #69747c;
 .tablet-markers{
     display: none;
 }
+
 .content{
     width: 92%;
     padding-left: 4%;
@@ -242,5 +259,8 @@ color: #69747c;
 .main-block-signatures{
     text-align: center;
     justify-content: center;
+}
+.social-sprites-tablet{
+display: none;
 }
 }
