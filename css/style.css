@@ -51,6 +51,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: #eee;
+    box-shadow: 0 4px #c6defa;
 }
 .navibar-content p{
     display: flex;
@@ -60,9 +61,19 @@
     margin-right: 4%;
     cursor: pointer;
 }
+
+
+.navibar-content img{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 54px; 
+    margin-left: 10px;
+}
 .navibar-content p:hover{
     opacity: 0.5;
 }
+
 
 
 .navibar-shadow{
