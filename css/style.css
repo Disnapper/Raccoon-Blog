@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+  font-family: 'Cantarell-Regular';
+  src: url('fonts/Cantarell-Regular.woff2') format('woff2'),
+       url('fonts/Cantarell-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .header-content{
     display: flex;
     flex-direction: row;
@@ -62,13 +71,19 @@
     cursor: pointer;
 }
 
-
+.triangle-shadow{
+    top:140px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
 .navibar-content img{
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: 54px; 
-    margin-left: 10px;
+   
 }
 .navibar-content p:hover{
     opacity: 0.5;
@@ -122,6 +137,7 @@
 }
 .main-block-image img{
     max-width: 100%;
+    min-width: 100%;
 }
 .highligting-line{
     height: 0.1px;
@@ -149,7 +165,8 @@ font-size: 20px;
     display: none;
 }
 .social-conversion{
-    width: min-content;
+    width: 40%;
+    margin-left: 15%;
     display: flex;
     flex-direction: row;
 }
@@ -164,25 +181,28 @@ font-size: 20px;
     width: 45px;
     background-color: #d1dae3;
 }
+.social-conversion-fb img,.social-conversion-gplus img,.social-conversion-twitter img,.social-conversion-vk img, .social-conversion-mg img{
+max-width: 60%;
+}
 .social-conversion-fb:hover,.social-conversion-gplus:hover,.social-conversion-twitter:hover,.social-conversion-vk:hover, .social-conversion-mg:hover{
 opacity: 0.5;
 cursor: pointer;
 }
-.social-conversion-fb input,.social-conversion-gplus input,.social-conversion-twitter input,.social-conversion-vk input, .social-conversion-mg input,
-.info{
-    font-family: Arial;
-    color: white;
-    background-color:#d1dae3 ;
-    margin-left: 15%;
-   border: none;
-   width: 30%;
-}
+
 .info input{
     margin-left: 40px;
-    
     border:none;
     background-color: red;
     width: 10px;
+}
+.value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
 }
 .main-block-signatures p{
     font-family: Arial;
@@ -225,8 +245,41 @@ font-family: Arial;
 font-size: 12px;
 color: #69747c;
 }
-.section-about img, .section-someinfo img{
-    max-width: 100%;
+.about-title{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+}
+.question-square{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    background-color: #6794b7;
+}
+.title-itself{
+     display: flex;
+    flex-direction: row;
+    background-color: #6794b7;
+    width: 85%;
+}
+.question-square span{
+    color: #eee;
+    font-size: 20px;
+}
+.title-itself span{
+    display: flex;
+    align-items: center;
+    font-family: 'Cantarell Regular';
+    font-size: 20px;
+    color: #6794b7;
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    height: 80%;
 }
 .section-someinfo{
     padding-top: 36px;
@@ -249,7 +302,34 @@ color: #69747c;
  .mobile-socials{
      display: none;
  }
+ .tablet-question,.tablet-response{
+     display: none;
+ }
 @media screen and (max-width: 992px){
+     .tablet-question,.tablet-response{
+     display: flex;
+     position: absolute;
+     width: 5%;
+     height: 52px;
+     background-color: #7ca7d9;
+     justify-content: center;
+     align-items: center;
+ }
+  .tablet-question span,.tablet-response span{
+      color: #608dc1;
+  }
+   .tablet-question:hover,.tablet-response:hover{
+       opacity: 0.5;
+   }
+ .tablet-question{
+     left: 0;
+ }
+ .tablet-response{
+     right: 0;
+ }
+    .triangle-shadow{
+        display: none;
+    }
      .social-conversion{
         display: none;
     }
@@ -275,12 +355,12 @@ color: #69747c;
     right: 0;
 }
  .social-sprites-tablet2{
-    padding-top: 52%;
+   top: 720px;
     max-width: 100%;
     position: absolute;
     display: flex;
     align-items: flex-end;
-    padding-right: 3px;
+    margin-right: 3px;
     flex-direction: column;
     width: 60px;
     height: 850px;
@@ -328,7 +408,7 @@ color: #69747c;
 .tablet-socials-people{
      display: flex;
     align-items: center;
-     padding-top: 4px;
+    padding-top: 4px;
     margin-top: 8px;
     width: 40px;
     height: 20px;
@@ -361,6 +441,9 @@ color: #69747c;
     }
 }
 @media screen and (max-width: 440px){
+    .tablet-question,.tablet-response{
+     display: none;
+ }
     .navibar-content{
         justify-content: unset;
     }
